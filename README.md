@@ -51,7 +51,7 @@ $ python manage.py makemigrations tareados
 $ python manage.py migrate
 ```
 
-Tarea 2
+Tarea 1
 =======
 
 Desarrollo:
@@ -70,7 +70,7 @@ $ python manage.py requestapi
 4. Se asumió que listas como payment y company son listados de objetos, por lo tanto, se crearon modelos para que se puedan agregar más desde el admin o ejecutando el comando que lee la API.
 
 
-Tarea 1
+Tarea 2
 =======
 
 Desarrollo:
