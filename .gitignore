@@ -19,7 +19,7 @@ yarn.lock
 /nbproject/private/
 trash/
 package-lock.json
-sellerbroapp/.env
+chr/.env
 apidoc/
 .vagrant/
 config/supervisor/supervisord_local.conf
