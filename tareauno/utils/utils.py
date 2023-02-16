@@ -7,12 +7,27 @@ from chr import settings
 from tareauno.models import Network, Company, Payment_Types, Station, Location
 
 def to_timezone(date_time, zone):
+    """
+    Funcionalidad para asignar zona horaria a un tipo datetime
+    Arguments:
+        date_time: datetime.datetime, fecha a la que se le asignará el timezone
+        zone: str, texto con código timezone válido
+    Returns:
+        datetime: datetime con timezone
+    """
     timezone = pytz.timezone(zone)
     without_timezone = datetime.fromtimestamp(date_time)
     return timezone.localize(without_timezone)
 
 
 def populate_station(stations, network):
+    """
+    Funcionalidad que recibe una lista de estaciones y crea los objetos en la db asociados a la red que
+    se pasa como parametro.
+    Arguments:
+        stations: List -> Any, Lista de diccionarios con la data de las estaciones de la red
+        network: Network, Objeto network
+    """
 
     for station in stations:
         try:
@@ -59,6 +74,13 @@ def populate_station(stations, network):
 
 
 def request_api():
+    """
+    Funcionalidad que consulta la URL solicitada en el ejercicio y procesa la respuesta JSON
+    para almacenarla en la DB
+    
+    Returns:
+        boolean: boolean, True que indica que se terminó sin problemas, False en caso contrario
+    """
     sUrl = settings.API_URL
     response = requests.get("{}/{}".format(sUrl, 'networks/bikesantiago'))
     if response.status_code in [200, 201]:

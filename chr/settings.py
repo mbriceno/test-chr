@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tareauno',
+    'tareados',
 ]
 
 MIDDLEWARE = [
@@ -143,3 +144,6 @@ MEDIA_ROOT = 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 API_URL=env('API_URL')
+SCRAPER_PAGE_URL=env('SCRAPER_PAGE_URL')
+
+BASE_DIR_ALT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
