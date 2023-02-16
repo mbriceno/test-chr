@@ -85,7 +85,7 @@ Ejecutar en la consola con:
 $ source $PATH_TO_VIRTUALENV/bin/active
 
 # Luego ejecutar:
-$ python manage.py scraper --pages <numero de paginas a procesar>
+# $ python manage.py scraper --pages <numero de paginas a procesar>
 $ python manage.py scraper --pages 5
 ```
 
