@@ -76,7 +76,7 @@ Tarea 2
 Desarrollo:
 -----------
 
-Comando para iniciar el scraper de la url solicitada y guardar la info en base de datos, la cantidad de paginas es considerable por lo tanto para probar el scraper se le puede pasar al comando el numero de paginas que tiene que procesar. 
+Comando para iniciar el scraper de la url solicitada y guardar la info en base de datos, la cantidad de páginas es considerable, por lo tanto, para probar el scraper se le puede pasar al comando el número de páginas que tiene que procesar. 
 
 Ejecutar en la consola con:
 
