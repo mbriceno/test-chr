@@ -51,7 +51,7 @@ $ python manage.py makemigrations tareados
 $ python manage.py migrate
 ```
 
-Tarea 1
+Tarea 2
 =======
 
 Desarrollo:
