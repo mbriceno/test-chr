@@ -43,6 +43,14 @@ user: admin
 pass: 1q2w3e4r5t
 ```
 
+Aplicar migraciones:
+
+```sh
+$ python manage.py makemigrations tareauno
+$ python manage.py makemigrations tareados
+$ python manage.py migrate
+```
+
 Tarea 1
 =======
 
